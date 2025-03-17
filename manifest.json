@@ -1,13 +1,13 @@
 {
   "name": "MicroPython Flasher",
-  "description": "Flash MicroPython @ ESP32-C3",
+  "description": "Flash MicroPython @ ESP32-S3",
   "version": "1.0.0",
   "builds": [
     {
-      "chipFamily": "ESP32-C3",
+      "chipFamily": "ESP32-S3",
       "parts": [
         {
-          "path": "https://micropython.org/resources/firmware/ESP32_GENERIC_C3-20241129-v1.24.1.bin",
+          "path": "https://micropython.org/resources/firmware/ESP32_GENERIC_S3-20241129-v1.24.1.bin",
           "offset": 0
         }
       ]
