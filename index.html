@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESP32 Web Flasher</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Install</title>
     <style>
       body { font-family: system-ui, Arial, sans-serif; padding: 16px; }
       .row { margin: 8px 0; }
@@ -15,16 +15,16 @@
       <label>
         Firmware:
         <select id="fwSelect">
+		  
           <optgroup label="ESP32-S3">
-		      <option value="micropython-v1.28-esp32-s3.json">MicroPython v1.28 ESP32-S3</option>
-              <option value="micropython-v1.27-esp32-s3.json">MicroPython v1.27 ESP32-S3</option>
+			<option value="micropython-v1.28-esp32-s3.json">MicroPython v1.28 ESP32-S3</option>
+			<option value="micropython-v1.27-esp32-s3.json">MicroPython v1.27 ESP32-S3</option>
+			<option value="adafruit-circuitpython-yd_esp32_s3_n16r8-en_US-10.2.1.json">Circuitpython 10.2.1 ESP32-S3</option>
 		  </optgroup>
-          <optgroup label="ESP32-C3">
-              <option value="micropython-v1.28-esp32-c3.json">MicroPython v1.28 ESP32-S3</option>
-           </optgroup>   
         </select>
       </label>
     </div>
+
     <div class="row">
       <esp-web-install-button id="installBtn" manifest="micropython-v1.28-esp32-s3.json"></esp-web-install-button>
     </div>
@@ -44,4 +44,3 @@
     </script>
   </body>
 </html>
-
