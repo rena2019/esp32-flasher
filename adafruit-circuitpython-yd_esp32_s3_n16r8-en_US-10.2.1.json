@@ -1,0 +1,15 @@
+{
+  "name": "Circuitpython 10.2.1 ESP32-S3",
+  "new_install_prompt_erase": true,
+  "description": "Flash Circuitpython @ ESP32-S3",
+  "version": "10.2.1",
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "improv": false,
+      "parts": [
+        { "path": "adafruit-circuitpython-yd_esp32_s3_n16r8-en_US-10.2.1.bin", "offset": 0 }
+      ]
+    }
+  ]
+}
